@@ -1,0 +1,16 @@
+For single line comments we use #
+i.e
+code is:
+print("Hello world")
+#print("Hello world") this line is commented
+
+For multiline comments we use '''
+
+i.e 
+code is:
+'''
+print("Hello world1")
+print("Hello world2") 
+
+'''
+now in ''' every line you write will be commented

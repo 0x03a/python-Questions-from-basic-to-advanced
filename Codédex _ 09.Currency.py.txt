@@ -1,0 +1,26 @@
+# Write code below 💖
+'''
+We just got home from a trip to South America, specifically Colombia, Peru, and Brazil. There's some leftover cash in:
+
+🇨🇴 Colombian pesos
+🇵🇪 Peruvian soles
+🇧🇷 Brazilian reais
+Create a currency.py program that asks the user for the amount they have in pesos, soles, and reais and calculates the total in USD.
+
+Make sure to Google the current exchange rates!
+'''
+
+
+#To convert an amount in another currency into USD, you use the formula:
+# Amount in USD= AmountinLocalCurrency/ExchangeRate 
+# you can check current exchange rate from google
+
+
+pesos=int(input("What do you left in pesos ? ")) 
+soles=int(input("What do you left in soles ? "))
+reais=int(input("What do you left in reais ? "))
+sum1=pesos/0.00023
+sum2=soles/0.27
+sum3=reais/0.16
+total=sum1+sum2+sum3
+print(total)
