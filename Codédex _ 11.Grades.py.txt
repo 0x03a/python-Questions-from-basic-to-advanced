@@ -1,0 +1,20 @@
+# Write code below 💖
+'''
+Create a grades.py program that checks whether a grade is above or below 55.
+Start by creating a variable called grade and give it a value between 0-100.
+Write a if/else statement for the following:
+If grade is greater than or equal to 55, then print "You passed."
+Else, print "You failed."
+After you run the code, change grade's value and rerun it. Do this a few times to make sure it's working as intended.
+'''
+import random
+# Generating a random number between 0 and 100 (inclusive)
+#Inclusive" means that the range includes both the lower and upper limits.
+#For example, if you're generating a random number between 0 and 100 inclusively:
+#The possible numbers include 0, 100, and all integers in between.
+
+grade=random.randint(0,100)
+if grade >= 55:
+   print("Passed")
+else:
+   print("Failed")
