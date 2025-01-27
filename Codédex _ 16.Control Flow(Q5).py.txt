@@ -1,0 +1,66 @@
+# Write code below 💖
+
+'''
+
+The year is 2199... we have become an interplanetary species and can travel to other planets in the solar system! 🚀
+
+Create a weight conversion program that:
+
+Asks the user what their Earth weight is (as a float).
+Asks the user for a planet number (as an int).
+Then, use an if/elif/else statement to calculate the user's weight on the destination planet.
+
+To calculate the user's weight:
+
+destination weight=Earth weight × relative gravity
+Number	Planet	Relative Gravity
+1	     Mercury	   0.38
+2	       Venus	   0.91
+3	        Mars	   0.38
+4	     Jupiter	   2.53
+5	      Saturn     1.07
+6	      Uranus	   0.89
+7	      Neptune	   1.14
+If the user enters a planet number outside of 1 - 7, print a message that says 'Invalid planet number'.
+
+
+
+
+'''
+
+
+
+userW=float(input("Enter user weight: "))
+planetNo=int(input("Enter planet number from 1-7: "))
+
+#destinationWeight=0.0
+
+if planetNo == 1:
+  destinationWeight=userW * 0.38 # Mercury
+elif planetNo == 2:
+  destinationWeight=userW * 0.91 # Venus
+elif planetNo == 3:
+  destinationWeight=userW * 0.38 # Mars
+elif planetNo == 4:
+  destinationWeight=userW * 2.53 # jupiter
+elif planetNo == 5:
+  destinationWeight=userW * 1.07 # Saturn
+elif planetNo == 6:
+  destinationWeight=userW * 0.89 # Uranus
+elif planetNo == 7:
+  destinationWeight=userW * 1.14 # 1.14
+else:
+  print("Invalid planet number")
+
+print(destinationWeight)
+
+
+'''
+note:
+
+No Block-Level Scope:
+In Python, variables defined inside an if, for, or while block are accessible outside the block if the block is in the same function or global scope.
+
+Local Variables in Functions:
+If the if statement is inside a function, variables declared inside the if statement are local to the function but not confined to the if block.
+'''
